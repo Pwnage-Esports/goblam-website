@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoBlam.gg - CS2 Contests Coming Soon</title>
-    <meta name="description" content="GoBlam.gg is building a skill-based Counter-Strike 2 contest platform for players, fans, and partners.">
+    <meta name="description" content="A new skill-based Counter-Strike 2 contest platform from Pwnage Esports is coming soon.">
     <meta name="theme-color" content="#0C0E11">
 
     <meta property="og:title" content="GoBlam.gg - Coming Soon">
-    <meta property="og:description" content="Skill-based Counter-Strike 2 contests for players, fans, and partners. Built by Pwnage Esports.">
+    <meta property="og:description" content="A new skill-based Counter-Strike 2 contest platform from Pwnage Esports is coming soon.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://goblam.gg/">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230C0E11'/%3E%3Cpath d='M32 10 54 54H10Z' fill='%23f9f9fd'/%3E%3C/svg%3E">
@@ -299,7 +299,7 @@
 
         .signal-panel {
             position: relative;
-            min-height: 520px;
+            min-height: 430px;
             border: 1px solid var(--outline-variant);
             background:
                 linear-gradient(180deg, rgba(249, 249, 253, 0.055), rgba(249, 249, 253, 0.015)),
@@ -346,6 +346,56 @@
 
         .panel-code {
             color: var(--accent-primary);
+        }
+
+        .coming-card {
+            position: relative;
+            z-index: 2;
+            margin: 24px;
+            padding: 24px;
+            border: 1px solid var(--outline-variant);
+            background: rgba(12, 14, 17, 0.78);
+        }
+
+        .coming-card h2 {
+            margin: 0;
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .coming-card h2 span {
+            color: var(--accent-primary);
+        }
+
+        .coming-card p {
+            margin: 18px 0 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.62;
+        }
+
+        .coming-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            margin: 24px 0 0;
+            padding: 0;
+            border: 1px solid var(--outline-variant);
+            background: var(--outline-variant);
+            list-style: none;
+        }
+
+        .coming-list li {
+            padding: 14px;
+            background: rgba(23, 26, 29, 0.88);
+            color: var(--text-primary);
+            font-size: 0.82rem;
+            font-weight: 800;
+            text-transform: uppercase;
         }
 
         .versus {
@@ -406,7 +456,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1px;
-            margin: 0 24px;
+            margin: 24px 24px 0;
             border: 1px solid var(--outline-variant);
             background: var(--outline-variant);
         }
@@ -653,6 +703,7 @@
             .versus,
             .matchline,
             .signal-grid,
+            .coming-list,
             .launch-strip,
             .below-fold {
                 grid-template-columns: 1fr;
@@ -670,6 +721,7 @@
 
             .matchline,
             .signal-grid,
+            .coming-card,
             .panel-footer {
                 margin-left: 20px;
                 margin-right: 20px;
@@ -708,15 +760,15 @@
                 <div>
                     <p class="eyebrow">GoBlam.gg coming soon</p>
                     <h1 id="hero-title">
-                        <span class="title-top">Skill-Based</span>
-                        <span class="title-bottom">CS2 Contests.</span>
+                        <span class="title-top">CS2 Contests.</span>
+                        <span class="title-bottom">Coming Soon.</span>
                     </h1>
                     <p class="hero-copy">
-                        GoBlam is a new esports contest platform from Pwnage Esports. Built for
-                        Counter-Strike 2 players, partners, and a wider competitive audience.
+                        GoBlam is a new skill-based Counter-Strike 2 contest platform from Pwnage Esports.
+                        Fresh formats, competitive energy, and prize pools are on the way.
                     </p>
                     <div class="hero-actions">
-                        <a class="button button-primary" href="mailto:contact@pwnage.nl?subject=GoBlam.gg launch access">Request launch access</a>
+                        <a class="button button-primary" href="mailto:contact@pwnage.nl?subject=GoBlam.gg">Get in touch</a>
                         <a class="button" href="https://pwnage.nl/">Pwnage Esports</a>
                     </div>
                 </div>
@@ -727,50 +779,15 @@
                         <span class="panel-code">Coming soon</span>
                     </div>
 
-                    <div class="versus" aria-label="GoBlam audience">
-                        <div class="side">
-                            <span>For players</span>
-                            <strong>Compete</strong>
-                        </div>
-                        <div class="vs" aria-hidden="true">+</div>
-                        <div class="side side-pro">
-                            <span>For partners</span>
-                            <strong>Grow</strong>
-                        </div>
-                    </div>
-
-                    <div class="matchline" aria-label="Launch details">
-                        <div class="metric">
-                            <span class="metric-label">Game</span>
-                            <span class="metric-value">CS2</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-label">Model</span>
-                            <span class="metric-value">Skill</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-label">Rewards</span>
-                            <span class="metric-value">Prizes</span>
-                        </div>
-                    </div>
-
-                    <div class="signal-grid" aria-label="Platform pillars">
-                        <div class="signal-item">
-                            <b>For players</b>
-                            <span>Enter skill-based CS2 contests built for competitive energy.</span>
-                        </div>
-                        <div class="signal-item">
-                            <b>For partners</b>
-                            <span>A focused esports product prepared for credible commercial growth.</span>
-                        </div>
-                        <div class="signal-item">
-                            <b>For launch</b>
-                            <span>Coming soon, with public access opening as the platform goes live.</span>
-                        </div>
-                        <div class="signal-item">
-                            <b>Built by Pwnage</b>
-                            <span>Developed by Pwnage Esports B.V. in the Netherlands.</span>
-                        </div>
+                    <div class="coming-card">
+                        <h2>What's <span>Coming</span></h2>
+                        <p>Skill-based Counter-Strike 2 contests with fresh formats, competitive energy, and prize pools.</p>
+                        <ul class="coming-list">
+                            <li>Counter-Strike 2</li>
+                            <li>Skill-based</li>
+                            <li>Prize pools</li>
+                            <li>Pwnage Esports</li>
+                        </ul>
                     </div>
 
                     <div class="panel-footer">
