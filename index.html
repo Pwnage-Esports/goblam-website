@@ -297,6 +297,15 @@
                 linear-gradient(180deg, rgba(251, 191, 36, 0.96), rgba(255, 138, 0, 1));
         }
 
+        .interest-note {
+            width: 100%;
+            margin: 2px 0 0;
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
         .signal-panel {
             position: relative;
             min-height: 430px;
@@ -768,8 +777,16 @@
                         Fresh formats, competitive energy, and prize pools are on the way.
                     </p>
                     <div class="hero-actions">
-                        <a class="button button-primary" href="mailto:contact@pwnage.nl?subject=GoBlam.gg">Get in touch</a>
+                        <a
+                            class="button button-primary js-tally-popup"
+                            href="https://tally.so/r/VLbXrl?source=goblam.gg&audience=gamer_waitlist&cta=hero_primary"
+                            data-tally-form-id="VLbXrl"
+                            data-tally-source="goblam.gg"
+                            data-tally-audience="gamer_waitlist"
+                            data-tally-cta="hero_primary"
+                        >Join the waitlist</a>
                         <a class="button" href="https://pwnage.nl/">Pwnage Esports</a>
+                        <p class="interest-note">Protected by Tally and reCAPTCHA</p>
                     </div>
                 </div>
 
@@ -792,7 +809,7 @@
 
                     <div class="panel-footer">
                         <span>Launch access</span>
-                        <span>Opening soon</span>
+                        <span>Waitlist open</span>
                     </div>
                 </aside>
             </section>
@@ -803,5 +820,31 @@
             &copy; 2026 Pwnage Esports B.V. GoBlam.gg coming soon.
         </footer>
     </div>
+    <script>
+        document.querySelectorAll('.js-tally-popup').forEach(trigger => {
+            trigger.addEventListener('click', event => {
+                const formId = trigger.dataset.tallyFormId;
+                if (!window.Tally || !formId) {
+                    return;
+                }
+
+                event.preventDefault();
+                window.Tally.openPopup(formId, {
+                    layout: 'modal',
+                    width: 720,
+                    overlay: true,
+                    hiddenFields: {
+                        source: trigger.dataset.tallySource,
+                        audience: trigger.dataset.tallyAudience,
+                        cta: trigger.dataset.tallyCta,
+                        originUrl: window.location.href,
+                        originPath: window.location.pathname,
+                        referrer: document.referrer
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="https://tally.so/widgets/embed.js" defer></script>
 </body>
 </html>
