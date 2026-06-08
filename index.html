@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoBlam.gg - CS2 Contests Coming Soon</title>
-    <meta name="description" content="A new skill-based Counter-Strike 2 contest platform from Pwnage Esports is coming soon.">
+    <title>GoBLAM.gg - Real cash. Real CS2 tournaments. For everyone.</title>
+    <meta name="description" content="GoBLAM is a skill-based Counter-Strike 2 tournament platform from Pwnage Esports. Solo entry, fast formats, and pro-level cash prizes built for the casual player. Coming soon.">
     <meta name="theme-color" content="#0C0E11">
 
-    <meta property="og:title" content="GoBlam.gg - Coming Soon">
-    <meta property="og:description" content="A new skill-based Counter-Strike 2 contest platform from Pwnage Esports is coming soon.">
+    <meta property="og:title" content="GoBLAM.gg - Pro-level prizes for casual players">
+    <meta property="og:description" content="Skill-based CS2 tournaments with solo entry, fast formats, and real cash prize pools. From Pwnage Esports. Coming soon.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://goblam.gg/">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230C0E11'/%3E%3Cpath d='M32 10 54 54H10Z' fill='%23f9f9fd'/%3E%3C/svg%3E">
@@ -200,11 +200,11 @@
 
         .hero {
             display: grid;
-            grid-template-columns: minmax(0, 1.04fr) minmax(360px, 0.76fr);
+            grid-template-columns: minmax(0, 1.04fr) minmax(360px, 0.78fr);
             gap: 64px;
             align-items: center;
             min-height: calc(100vh - 100px);
-            padding: 48px 0 76px;
+            padding: 40px 0 64px;
         }
 
         .eyebrow {
@@ -229,14 +229,15 @@
             max-width: 830px;
             margin: 0;
             font-family: var(--font-display);
-            font-size: 7.6rem;
+            font-size: 6.6rem;
             font-style: italic;
             font-weight: 700;
-            line-height: 0.84;
+            line-height: 0.86;
             text-transform: uppercase;
         }
 
         .title-top,
+        .title-mid,
         .title-bottom {
             display: block;
         }
@@ -247,11 +248,16 @@
         }
 
         .hero-copy {
-            max-width: 690px;
+            max-width: 620px;
             margin: 24px 0 0;
             color: var(--text-secondary);
             font-size: 1.16rem;
             line-height: 1.72;
+        }
+
+        .hero-copy strong {
+            color: var(--text-primary);
+            font-weight: 700;
         }
 
         .hero-actions {
@@ -369,7 +375,7 @@
         .coming-card h2 {
             margin: 0;
             font-family: var(--font-display);
-            font-size: 2.4rem;
+            font-size: 2.1rem;
             font-style: italic;
             font-weight: 700;
             line-height: 1;
@@ -381,10 +387,10 @@
         }
 
         .coming-card p {
-            margin: 18px 0 0;
+            margin: 16px 0 0;
             color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.62;
+            font-size: 0.98rem;
+            line-height: 1.6;
         }
 
         .coming-list {
@@ -405,127 +411,6 @@
             font-size: 0.82rem;
             font-weight: 800;
             text-transform: uppercase;
-        }
-
-        .versus {
-            position: relative;
-            z-index: 2;
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            gap: 12px;
-            align-items: stretch;
-            padding: 28px 24px 22px;
-        }
-
-        .side {
-            min-width: 0;
-            padding: 18px;
-            border: 1px solid rgba(116, 117, 121, 0.42);
-            background: rgba(12, 14, 17, 0.62);
-        }
-
-        .side span {
-            display: block;
-            color: var(--text-muted);
-            font-size: 0.76rem;
-            font-weight: 800;
-            text-transform: uppercase;
-        }
-
-        .side strong {
-            display: block;
-            margin-top: 10px;
-            font-family: var(--font-display);
-            font-size: 1.68rem;
-            font-style: italic;
-            line-height: 0.95;
-            text-transform: uppercase;
-        }
-
-        .side-pro strong {
-            color: var(--accent-primary);
-        }
-
-        .vs {
-            display: grid;
-            place-items: center;
-            width: 56px;
-            border: 1px solid rgba(255, 138, 0, 0.56);
-            background: rgba(255, 138, 0, 0.12);
-            color: var(--accent-primary);
-            font-family: var(--font-display);
-            font-size: 1.8rem;
-            font-style: italic;
-            font-weight: 700;
-        }
-
-        .matchline {
-            position: relative;
-            z-index: 2;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1px;
-            margin: 24px 24px 0;
-            border: 1px solid var(--outline-variant);
-            background: var(--outline-variant);
-        }
-
-        .metric {
-            min-width: 0;
-            padding: 16px;
-            background: rgba(12, 14, 17, 0.82);
-        }
-
-        .metric-label {
-            display: block;
-            color: var(--text-muted);
-            font-size: 0.72rem;
-            font-weight: 800;
-            text-transform: uppercase;
-        }
-
-        .metric-value {
-            display: block;
-            margin-top: 8px;
-            color: var(--text-primary);
-            font-family: var(--font-display);
-            font-size: 1.64rem;
-            font-style: italic;
-            font-weight: 700;
-            line-height: 1;
-            text-transform: uppercase;
-        }
-
-        .signal-grid {
-            position: relative;
-            z-index: 2;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1px;
-            margin: 24px;
-            border: 1px solid var(--outline-variant);
-            background: var(--outline-variant);
-        }
-
-        .signal-item {
-            min-height: 86px;
-            padding: 16px;
-            background: rgba(12, 14, 17, 0.78);
-        }
-
-        .signal-item b {
-            display: block;
-            color: var(--text-primary);
-            font-size: 0.88rem;
-            text-transform: uppercase;
-        }
-
-        .signal-item span {
-            display: block;
-            margin-top: 8px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            line-height: 1.45;
         }
 
         .panel-footer {
@@ -549,85 +434,427 @@
             color: var(--accent-secondary);
         }
 
-        .launch-strip {
+        /* ---------- Shared section scaffolding ---------- */
+        .section {
+            padding: 70px 0 10px;
+        }
+
+        .section-head {
+            max-width: 760px;
+            margin: 0 0 36px;
+        }
+
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0 0 16px;
+            color: var(--accent-secondary);
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .section-eyebrow::before {
+            content: "";
+            width: 36px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+        }
+
+        .section-title {
+            margin: 0;
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 0.98;
+            text-transform: uppercase;
+        }
+
+        .section-title span {
+            color: var(--accent-primary);
+        }
+
+        .section-lead {
+            max-width: 660px;
+            margin: 18px 0 0;
+            color: var(--text-secondary);
+            font-size: 1.08rem;
+            line-height: 1.7;
+        }
+
+        /* ---------- Value props ---------- */
+        .value-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 1px;
-            margin-top: -1px;
             border: 1px solid var(--outline-variant);
             background: var(--outline-variant);
         }
 
-        .launch-item {
-            min-width: 0;
-            padding: 18px;
-            background: rgba(17, 19, 23, 0.86);
+        .value-card {
+            min-height: 188px;
+            padding: 26px 24px;
+            background: rgba(17, 19, 23, 0.9);
         }
 
-        .launch-label {
+        .value-card .num {
             display: block;
-            color: var(--text-muted);
-            font-size: 0.74rem;
-            font-weight: 800;
+            color: var(--accent-primary);
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .value-card b {
+            display: block;
+            margin-top: 16px;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1.02;
             text-transform: uppercase;
         }
 
-        .launch-value {
+        .value-card span {
             display: block;
-            margin-top: 8px;
-            color: var(--text-primary);
+            margin-top: 12px;
+            color: var(--text-secondary);
+            font-size: 0.94rem;
+            line-height: 1.55;
+        }
+
+        /* ---------- Formats ---------- */
+        .format-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            border: 1px solid var(--outline-variant);
+            background: var(--outline-variant);
+        }
+
+        .format-card {
+            display: flex;
+            flex-direction: column;
+            padding: 28px 26px 30px;
+            background: rgba(17, 19, 23, 0.9);
+        }
+
+        .format-tag {
+            display: inline-flex;
+            align-self: flex-start;
+            padding: 6px 10px;
+            border: 1px solid rgba(255, 138, 0, 0.5);
+            background: rgba(255, 138, 0, 0.1);
+            color: var(--accent-primary);
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .format-card h3 {
+            margin: 18px 0 0;
             font-family: var(--font-display);
-            font-size: 1.9rem;
+            font-size: 1.74rem;
             font-style: italic;
             font-weight: 700;
             line-height: 1;
             text-transform: uppercase;
         }
 
-        .below-fold {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1px;
-            margin-top: 20px;
-            background: var(--outline-variant);
-            border: 1px solid var(--outline-variant);
+        .format-card p {
+            margin: 14px 0 0;
+            color: var(--text-secondary);
+            font-size: 0.96rem;
+            line-height: 1.62;
         }
 
-        .info-block {
-            min-height: 178px;
-            padding: 30px;
-            background: rgba(17, 19, 23, 0.88);
-        }
-
-        .info-block h2 {
-            margin: 0;
-            font-family: var(--font-display);
-            font-size: 3.2rem;
-            font-style: italic;
-            font-weight: 700;
-            line-height: 0.96;
+        .format-card .format-note {
+            margin-top: auto;
+            padding-top: 18px;
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            font-weight: 800;
             text-transform: uppercase;
         }
 
-        .info-block h2 span {
+        /* ---------- Funnel / tiers ---------- */
+        .funnel-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            border: 1px solid var(--outline-variant);
+            background: var(--outline-variant);
+        }
+
+        .tier-card {
+            display: flex;
+            flex-direction: column;
+            padding: 24px 22px 26px;
+            background: rgba(17, 19, 23, 0.9);
+        }
+
+        .tier-card.headline {
+            background:
+                linear-gradient(180deg, rgba(255, 138, 0, 0.12), rgba(255, 138, 0, 0.02)),
+                rgba(17, 19, 23, 0.9);
+        }
+
+        .tier-label {
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tier-name {
+            margin: 12px 0 0;
+            min-height: 2.8rem;
+            font-family: var(--font-display);
+            font-size: 1.34rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1.04;
+            text-transform: uppercase;
+        }
+
+        .tier-prize {
+            margin: 18px 0 0;
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--accent-secondary);
+        }
+
+        .tier-card.headline .tier-prize {
             color: var(--accent-primary);
         }
 
-        .info-block p {
-            max-width: 540px;
-            margin: 16px 0 0;
+        .tier-pool {
+            margin: 20px 0 0;
+        }
+
+        .tier-pool-label {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            color: var(--text-muted);
+            font-size: 0.74rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .tier-pool-label b {
             color: var(--text-secondary);
-            line-height: 1.72;
+        }
+
+        .tier-pool-bar {
+            display: block;
+            margin-top: 10px;
+            height: 8px;
+            border: 1px solid var(--outline-variant);
+            background: rgba(12, 14, 17, 0.7);
+            overflow: hidden;
+        }
+
+        .tier-pool-bar i {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-secondary), rgba(34, 197, 94, 0.4));
+        }
+
+        .tier-card.headline .tier-pool-bar i {
+            background: linear-gradient(90deg, var(--accent-primary), rgba(255, 138, 0, 0.4));
+        }
+
+        .tier-note {
+            margin-top: auto;
+            padding-top: 18px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            line-height: 1.5;
+        }
+
+        .funnel-caption {
+            margin: 22px 0 0;
+            color: var(--text-secondary);
+            font-size: 0.98rem;
+            line-height: 1.6;
+        }
+
+        .funnel-caption strong {
+            color: var(--text-primary);
+        }
+
+        /* ---------- Scale stats ---------- */
+        .scale {
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+            gap: 1px;
+            border: 1px solid var(--outline-variant);
+            background: var(--outline-variant);
+        }
+
+        .scale-copy {
+            padding: 36px 34px;
+            background: rgba(17, 19, 23, 0.92);
+        }
+
+        .scale-copy h3 {
+            margin: 0;
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1.02;
+            text-transform: uppercase;
+        }
+
+        .scale-copy h3 span {
+            color: var(--accent-primary);
+        }
+
+        .scale-copy p {
+            margin: 18px 0 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .scale-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--outline-variant);
+        }
+
+        .scale-stat {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 124px;
+            padding: 22px 20px;
+            background: rgba(12, 14, 17, 0.88);
+        }
+
+        .scale-stat b {
+            font-family: var(--font-display);
+            font-size: 2.3rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .scale-stat span {
+            margin-top: 10px;
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .scale-source {
+            margin: 16px 0 0;
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* ---------- Inside the product ---------- */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            border: 1px solid var(--outline-variant);
+            background: var(--outline-variant);
+        }
+
+        .product-card {
+            min-height: 168px;
+            padding: 24px 22px;
+            background: rgba(17, 19, 23, 0.9);
+        }
+
+        .product-card b {
+            display: block;
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1.06;
+            text-transform: uppercase;
+        }
+
+        .product-card span {
+            display: block;
+            margin-top: 12px;
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            line-height: 1.55;
+        }
+
+        /* ---------- Closing CTA ---------- */
+        .cta {
+            position: relative;
+            margin: 80px 0 0;
+            padding: 56px 44px;
+            border: 1px solid rgba(255, 138, 0, 0.4);
+            background:
+                linear-gradient(180deg, rgba(255, 138, 0, 0.1), rgba(34, 197, 94, 0.04)),
+                rgba(17, 19, 23, 0.92);
+            overflow: hidden;
+        }
+
+        .cta h2 {
+            margin: 0;
+            max-width: 760px;
+            font-family: var(--font-display);
+            font-size: 3.1rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 0.98;
+            text-transform: uppercase;
+        }
+
+        .cta h2 span {
+            color: var(--accent-primary);
+        }
+
+        .cta p {
+            max-width: 600px;
+            margin: 18px 0 0;
+            color: var(--text-secondary);
+            font-size: 1.06rem;
+            line-height: 1.66;
+        }
+
+        .cta .hero-actions {
+            margin-top: 28px;
         }
 
         footer {
             width: min(1180px, calc(100% - 40px));
             margin: 0 auto;
-            padding: 26px 0 40px;
+            padding: 40px 0;
             color: var(--text-muted);
             font-size: 0.74rem;
             font-weight: 700;
             text-transform: uppercase;
+        }
+
+        footer a:hover {
+            color: var(--accent-primary);
         }
 
         @keyframes blink {
@@ -650,18 +877,36 @@
 
         @media (max-width: 1020px) {
             h1 {
-                font-size: 5.8rem;
+                font-size: 5.2rem;
             }
 
             .hero {
                 grid-template-columns: 1fr;
                 min-height: auto;
                 gap: 42px;
-                padding-top: 40px;
+                padding-top: 32px;
             }
 
             .signal-panel {
                 min-height: 0;
+            }
+
+            .value-grid,
+            .product-grid,
+            .funnel-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .format-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .scale {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
             }
         }
 
@@ -688,19 +933,18 @@
             }
 
             .hero {
-                padding: 30px 0 48px;
+                padding: 24px 0 40px;
             }
 
             h1 {
-                font-size: 4.45rem;
+                font-size: 3.9rem;
             }
 
             .hero-copy {
                 font-size: 1rem;
             }
 
-            .hero-actions,
-            .panel-footer {
+            .hero-actions {
                 flex-direction: column;
                 align-items: stretch;
             }
@@ -709,43 +953,34 @@
                 width: 100%;
             }
 
-            .versus,
-            .matchline,
-            .signal-grid,
             .coming-list,
-            .launch-strip,
-            .below-fold {
+            .value-grid,
+            .funnel-grid,
+            .product-grid,
+            .scale-stats {
                 grid-template-columns: 1fr;
             }
 
-            .versus {
-                gap: 1px;
-                padding: 20px;
+            .section {
+                padding-top: 52px;
             }
 
-            .vs {
-                width: 100%;
-                min-height: 48px;
+            .section-title {
+                font-size: 2.1rem;
             }
 
-            .matchline,
-            .signal-grid,
-            .coming-card,
+            .scale-copy,
+            .cta {
+                padding: 30px 24px;
+            }
+
+            .cta h2 {
+                font-size: 2.2rem;
+            }
+
             .panel-footer {
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-
-            .launch-value {
-                font-size: 1.7rem;
-            }
-
-            .info-block {
-                padding: 24px;
-            }
-
-            .info-block h2 {
-                font-size: 2.45rem;
+                flex-direction: column;
+                align-items: stretch;
             }
         }
     </style>
@@ -755,7 +990,7 @@
         <div class="arena" aria-hidden="true"></div>
 
         <header class="topbar" aria-label="Site header">
-            <a class="brand" href="/" aria-label="GoBlam home">
+            <a class="brand" href="/" aria-label="GoBLAM home">
                 <span class="brand-wordmark" aria-hidden="true"><span>GO</span><span>BLAM</span></span>
             </a>
             <div class="status-pill" aria-label="Launch status">
@@ -767,14 +1002,16 @@
         <main>
             <section class="hero" aria-labelledby="hero-title">
                 <div>
-                    <p class="eyebrow">GoBlam.gg coming soon</p>
+                    <p class="eyebrow">CS2 tournaments &middot; built for everyone</p>
                     <h1 id="hero-title">
-                        <span class="title-top">CS2 Contests.</span>
-                        <span class="title-bottom">Coming Soon.</span>
+                        <span class="title-top">Real cash.</span>
+                        <span class="title-mid">No team.</span>
+                        <span class="title-bottom">Just&nbsp;you.</span>
                     </h1>
                     <p class="hero-copy">
-                        GoBlam is a new skill-based Counter-Strike 2 contest platform from Pwnage Esports.
-                        Fresh formats, competitive energy, and prize pools are on the way.
+                        GoBLAM is a skill-based Counter-Strike 2 tournament platform from Pwnage Esports.
+                        <strong>Enter solo, play in hours not weeks, and compete for pro-level cash prize pools.</strong>
+                        Pro prizes have always been for the elite. We&rsquo;re opening them up to the other 99%.
                     </p>
                     <div class="hero-actions">
                         <a
@@ -785,39 +1022,191 @@
                             data-tally-audience="gamer_waitlist"
                             data-tally-cta="hero_primary"
                         >Join the waitlist</a>
-                        <a class="button" href="https://pwnage.nl/">Pwnage Esports</a>
+                        <a class="button" href="#formats">See the formats</a>
                         <p class="interest-note">Protected by Tally and reCAPTCHA</p>
                     </div>
                 </div>
 
                 <aside class="signal-panel" aria-label="Launch preview">
                     <div class="panel-top">
-                        <span>Launch preview</span>
+                        <span>What you&rsquo;re joining</span>
                         <span class="panel-code">Coming soon</span>
                     </div>
 
                     <div class="coming-card">
-                        <h2>What's <span>Coming</span></h2>
-                        <p>Skill-based Counter-Strike 2 contests with fresh formats, competitive energy, and prize pools.</p>
+                        <h2>Pro stakes, <span>casual entry</span></h2>
+                        <p>Free-to-enter contests up to quarterly mega-tournaments &mdash; all on Counter-Strike 2, all decided by how you play.</p>
                         <ul class="coming-list">
-                            <li>Counter-Strike 2</li>
-                            <li>Skill-based</li>
-                            <li>Prize pools</li>
-                            <li>Pwnage Esports</li>
+                            <li>Solo entry</li>
+                            <li>Real cash prizes</li>
+                            <li>Free-to-enter contests</li>
+                            <li>1-click Steam login</li>
                         </ul>
                     </div>
 
                     <div class="panel-footer">
-                        <span>Launch access</span>
+                        <span>Founding-player access</span>
                         <span>Waitlist open</span>
                     </div>
                 </aside>
             </section>
 
+            <section class="section" aria-labelledby="why-title">
+                <div class="section-head">
+                    <p class="section-eyebrow">The casual rewrite</p>
+                    <h2 class="section-title" id="why-title">Competitive prizes shouldn&rsquo;t be <span>for pros only</span></h2>
+                    <p class="section-lead">
+                        Most players have the skill, but not the team, the time, or the patience for week-long brackets.
+                        GoBLAM rewrites the value proposition for the casual player &mdash; four things, together, that no one else offers.
+                    </p>
+                </div>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <span class="num">01</span>
+                        <b>Anyone can win</b>
+                        <span>You&rsquo;re not locked out because you don&rsquo;t scrim five nights a week. Show up and play.</span>
+                    </div>
+                    <div class="value-card">
+                        <span class="num">02</span>
+                        <b>No team needed</b>
+                        <span>Queue solo. We build the lobbies and run the event around you &mdash; no roster, no rivals to recruit.</span>
+                    </div>
+                    <div class="value-card">
+                        <span class="num">03</span>
+                        <b>Rapid format</b>
+                        <span>A full tournament resolves in hours, not weeks. Sit down, compete, get paid the same session.</span>
+                    </div>
+                    <div class="value-card">
+                        <span class="num">04</span>
+                        <b>Real prize pools</b>
+                        <span>Cash payouts, not points or cosmetics. Pro-level money, opened up to the casual player.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="formats" aria-labelledby="formats-title">
+                <div class="section-head">
+                    <p class="section-eyebrow">Tournament formats</p>
+                    <h2 class="section-title" id="formats-title">Formats you can&rsquo;t play <span>anywhere else</span></h2>
+                    <p class="section-lead">
+                        Forget the standard single-elimination bracket. Every GoBLAM tournament is a live, evolving event
+                        where your performance keeps you in &mdash; or knocks you out.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="funnel-title">
+                <div class="section-head">
+                    <p class="section-eyebrow">The climb</p>
+                    <h2 class="section-title" id="funnel-title">Climb from free entry to the <span>mega-tournament</span></h2>
+                    <p class="section-lead">
+                        Start with free entry. As you climb the tiers, the fields get bigger and the prizes get real &mdash;
+                        ending in a mega-tournament built to be broadcast.
+                    </p>
+                </div>
+
+                <div class="funnel-grid">
+                    <div class="tier-card">
+                        <span class="tier-label">Tier 1 &middot; Entry</span>
+                        <h3 class="tier-name">Free-to-Enter Contests</h3>
+                        <div class="tier-prize">Daily</div>
+                        <div class="tier-pool">
+                            <span class="tier-pool-label">Prize pool <b>Growing</b></span>
+                            <span class="tier-pool-bar"><i style="width: 22%"></i></span>
+                        </div>
+                        <p class="tier-note">Always available. Jump in any day at no cost.</p>
+                    </div>
+
+                    <div class="tier-card">
+                        <span class="tier-label">Tier 2 &middot; Step up</span>
+                        <h3 class="tier-name">Weekly Contests</h3>
+                        <div class="tier-prize">Weekly</div>
+                        <div class="tier-pool">
+                            <span class="tier-pool-label">Prize pool <b>Bigger</b></span>
+                            <span class="tier-pool-bar"><i style="width: 48%"></i></span>
+                        </div>
+                        <p class="tier-note">Bigger fields and bigger prizes, still low cost to enter.</p>
+                    </div>
+
+                    <div class="tier-card">
+                        <span class="tier-label">Tier 3 &middot; Majors</span>
+                        <h3 class="tier-name">Monthly Majors</h3>
+                        <div class="tier-prize">Monthly</div>
+                        <div class="tier-pool">
+                            <span class="tier-pool-label">Prize pool <b>Major</b></span>
+                            <span class="tier-pool-bar"><i style="width: 74%"></i></span>
+                        </div>
+                        <p class="tier-note">The stakes get serious and the prizes get real.</p>
+                    </div>
+
+                    <div class="tier-card headline">
+                        <span class="tier-label">Tier 4 &middot; Headline</span>
+                        <h3 class="tier-name">Mega-Tournament</h3>
+                        <div class="tier-prize">Quarterly</div>
+                        <div class="tier-pool">
+                            <span class="tier-pool-label">Prize pool <b>Biggest</b></span>
+                            <span class="tier-pool-bar"><i style="width: 100%"></i></span>
+                        </div>
+                        <p class="tier-note">The headline event. Broadcastable. Sponsorable.</p>
+                    </div>
+                </div>
+
+                <p class="funnel-caption">
+                    <strong>Gets big &mdash; really big.</strong> A 100,000-player tournament runs as thousands of
+                    matches in parallel and still resolves in hours. The mega-tournament is what the whole climb exists to produce.
+                </p>
+            </section>
+
+            <section class="section" aria-labelledby="product-title">
+                <div class="section-head">
+                    <p class="section-eyebrow">Inside the product</p>
+                    <h2 class="section-title" id="product-title">Built to be <span>effortless</span></h2>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <b>1-click login</b>
+                        <span>Steam single sign-on. Zero-friction onboarding &mdash; you&rsquo;re in and playing in seconds.</span>
+                    </div>
+                    <div class="product-card">
+                        <b>Free-to-enter</b>
+                        <span>Daily and weekly contests at zero cost to play, so there&rsquo;s always a way in.</span>
+                    </div>
+                    <div class="product-card">
+                        <b>Leaderboards &amp; stats</b>
+                        <span>Public rankings, season ladders, and deep performance data on every match you play.</span>
+                    </div>
+                    <div class="product-card">
+                        <b>Companion app</b>
+                        <span>Live in-game alerts and claim your rewards on the go, from anywhere.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta" aria-labelledby="cta-title">
+                <h2 id="cta-title">Get in before <span>the first round</span></h2>
+                <p>
+                    Join the waitlist for founding-player access. Be first to the free-to-enter contests, the majors, and the
+                    very first mega-tournament.
+                </p>
+                <div class="hero-actions">
+                    <a
+                        class="button button-primary js-tally-popup"
+                        href="https://tally.so/r/VLbXrl?source=goblam.gg&audience=gamer_waitlist&cta=footer_primary"
+                        data-tally-form-id="VLbXrl"
+                        data-tally-source="goblam.gg"
+                        data-tally-audience="gamer_waitlist"
+                        data-tally-cta="footer_primary"
+                    >Join the waitlist</a>
+                    <a class="button" href="https://pwnage.nl/">Pwnage Esports</a>
+                    <p class="interest-note">Protected by Tally and reCAPTCHA</p>
+                </div>
+            </section>
         </main>
 
         <footer>
-            &copy; 2026 Pwnage Esports B.V. GoBlam.gg coming soon.
+            &copy; 2026 Pwnage Esports B.V. &middot; GoBLAM.gg &middot; A skill-based Counter-Strike 2 tournament platform &middot; Coming soon
         </footer>
     </div>
     <script>
